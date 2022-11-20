@@ -1,12 +1,37 @@
 ---
 layout: layouts/post.njk
-title: About Me
+title: Contact
 templateClass: tmpl-post
 eleventyNavigation:
-  key: About Me
+  key: Contact
   order: 3
 ---
 
-![A picture of me](https://ca.slack-edge.com/T0K4XNS78-U043R5TDQ04-d2de0c082dca-512)
+<div class="container py-4 maxheight">
 
-Hello there. I am learning web development.
+
+  <form id="contactForm" netlify>
+
+  <div class="mb-3">
+      <label class="form-label" for="name">Name</label>
+      <input class="form-control" id="name" type="text" placeholder="Name" />
+    </div>
+
+  <div class="mb-3">
+      <label class="form-label" for="emailAddress">Email Address</label>
+      <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+    </div>
+
+  <div class="mb-3">
+      <label class="form-label" for="message">Message</label>
+      <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
+    </div>
+
+  <div class="d-grid">
+      <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+    </div>
+
+  </form>
+
+</div>
+
