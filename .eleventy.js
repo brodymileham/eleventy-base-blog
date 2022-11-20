@@ -100,8 +100,9 @@ module.exports = function(eleventyConfig) {
       "md",
       "njk",
       "html",
-      "liquid"
-    ],
+      "liquid",
+      "yml"
+  ],
 
     // Pre-process *.md files with: (default: `liquid`)
     markdownTemplateEngine: "njk",
