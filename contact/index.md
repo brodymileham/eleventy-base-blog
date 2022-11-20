@@ -1,5 +1,5 @@
 ---
-layout: layouts/post.njk
+layout: layouts/base.njk
 title: Contact
 templateClass: tmpl-post
 eleventyNavigation:
@@ -9,6 +9,7 @@ eleventyNavigation:
 
 <div class="container py-4 maxheight">
 
+  <h1 class="display-4 mb-5">Contact Me</h1>
   <form name="contact" method="POST" data-netlify="true">
 
   <div class="mb-3">
@@ -26,9 +27,16 @@ eleventyNavigation:
       <textarea class="form-control" name="message" type="text" placeholder="Message" style="height: 10rem;" required></textarea>
     </div>
 
-  <div class="d-grid">
+  <div class="form-check mb-3">
+  <input class="form-check-input" type="checkbox" value="" name="flexCheckDefault" required>
+  <label class="form-check-label" for="flexCheckDefault">
+    I agree to the <a href="/contact/tnc/index.html">Terms and Conditions</a>
+  </label>
+
+  <div class="d-grid mt-5">
       <button class="btn btn-primary btn-lg" type="submit">Submit</button>
     </div>
+</div>
 
   </form>
 

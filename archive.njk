@@ -2,13 +2,15 @@
 layout: layouts/home.njk
 permalink: /posts/
 eleventyNavigation:
-  key: Posts
+  key: Blog
   order: 2
 ---
-<div class="container mt-5">
-  <h1>Posts</h1>
+<div class="container mt-5 maxheight">
+  <h1 class="display-4 mb-5">Blog</h1>
+
+  {% set postslist = collections.posts %}
+  {% include "postslist.njk" %}
 </div>
 
 
-{% set postslist = collections.posts %}
-{% include "postslist.njk" %}
+
