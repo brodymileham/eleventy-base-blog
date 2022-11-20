@@ -10,7 +10,7 @@ eleventyNavigation:
 <div class="container py-4 maxheight">
 
 
-  <form id="contactForm" netlify>
+  <form id="contactForm" method="POST" data-netlify="true">
 
   <div class="mb-3">
       <label class="form-label" for="name">Name</label>
