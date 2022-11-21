@@ -75,7 +75,6 @@ module.exports = function(eleventyConfig) {
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
 
-  eleventyConfig.addLayoutAlias("blog", "layouts/blog.njk");
 
   // Override Browsersync defaults (used only with --serve)
   eleventyConfig.setBrowserSyncConfig({
