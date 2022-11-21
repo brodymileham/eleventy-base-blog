@@ -1,12 +1,19 @@
-<ol reversed class="postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
-{% for post in postslist | reverse %}
-  <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-    <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-    <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+
+<ul role="list">
+
+  {%- for post in collections.posts | reverse -%}
+    <div class="card mb-3" style="width: 34rem;">
+    <div class="card-body">
+    <h5 class="card-title"><a href="{{ post.url }}" class="text-dark">{{ post.data.title}}</a></h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ post.date | readableDate}}</h6>
+    <p class="card-text">{{ post.data.description }}</p>
+    <a href="{{ post.url }}" class="card-link">Read More...</a>
     {% for tag in post.data.tags | filterTagList %}
       {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
       <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
     {% endfor %}
-  </li>
-{% endfor %}
-</ol>
+  </div>
+</div>
+  {%- endfor -%}
+
+</ul>
