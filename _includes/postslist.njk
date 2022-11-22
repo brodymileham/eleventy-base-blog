@@ -1,7 +1,8 @@
 
-      <ul>
+      <div class="container">
+        <ul>
       {%- for post in collections.posts | reverse -%}
-        <div class="card mb-3" style="width: 34rem;">
+        <div class="card mb-3">
           <div class="card-body">
             <h5 class="card-title">
               <a href="{{ post.url }}" class="text-dark">{{ post.data.title }}</a>
@@ -17,3 +18,5 @@
         </div>
       {%- endfor -%}
     </ul>
+      </div>
+      
