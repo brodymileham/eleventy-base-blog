@@ -1,19 +1,19 @@
 
-<ul role="list">
-
-  {%- for post in collections.posts | reverse -%}
-    <div class="card mb-3" style="width: 34rem;">
-    <div class="card-body">
-    <h5 class="card-title"><a href="{{ post.url }}" class="text-dark">{{ post.data.title}}</a></h5>
-    <h6 class="card-subtitle mb-2 text-muted">{{ post.date | readableDate}}</h6>
-    <p class="card-text">{{ post.data.description }}</p>
-    <a href="{{ post.url }}" class="card-link">Read More...</a>
-    {% for tag in post.data.tags | filterTagList %}
-      {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-      <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-    {% endfor %}
-  </div>
-</div>
-  {%- endfor -%}
-
-</ul>
+      <ul>
+      {%- for post in collections.posts | reverse -%}
+        <div class="card mb-3" style="width: 34rem;">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="{{ post.url }}" class="text-dark">{{ post.data.title }}</a>
+            </h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ post.date | readableDate }}</h6>
+            <p class="card-text">{{ post.data.description }}</p>
+            <a href="{{ post.url }}" class="card-link">Read More...</a>
+            {% for tag in post.data.tags | filterTagList %}
+              {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+              <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      {%- endfor -%}
+    </ul>

@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 3
 ---
 
-<div class="container py-4 maxheight">
+<div class="container py-4">
 
   <h1 class="display-4 mb-5">Contact Me</h1>
   <form name="contact" method="POST" data-netlify="true">
@@ -33,7 +33,7 @@ eleventyNavigation:
     I agree to the <a href="/contact/tnc/index.html">Terms and Conditions</a>
   </label>
 
-  <div class="d-grid mt-5">
+  <div class="d-grid my-5">
       <button class="btn btn-primary btn-lg" type="submit">Submit</button>
     </div>
 </div>
@@ -41,4 +41,3 @@ eleventyNavigation:
   </form>
 
 </div>
-
