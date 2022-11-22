@@ -4,6 +4,9 @@ eleventyNavigation:
   key: Home
   order: 1
 ---
+
+{% set postslist = collections.posts | head(-3) %}
+
 <div class="bg-light">
   <div class="container py-5">
     <div class="row h-100 align-items-center py-5">
@@ -16,3 +19,10 @@ eleventyNavigation:
     </div>
   </div>
 </div>
+<div class="container text-center mt-3">
+    <button type="button" class="btn btn-outline-secondary">
+      <a href="{{ postslist[0].url | safe }}">
+        Latest Post
+        </a>
+      </button>
+  </div>
