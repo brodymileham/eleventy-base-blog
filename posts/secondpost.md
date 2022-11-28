@@ -1,6 +1,6 @@
 ---
-title: Lesson 1
-description: This is a post about our first lesson with the Coders Guild
+title: Lesson 2
+description: This is a post about our second lesson with the Coders Guild
 layout: layouts/post.njk
 tags:
   - lessons
