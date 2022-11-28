@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 3
 ---
 
-<div class="container py-4">
+<div class="container py-4 vh-100">
 
   <h1 class="display-4 mb-5">Contact Me</h1>
   <form name="contact" method="POST" data-netlify="true">
