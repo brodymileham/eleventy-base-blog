@@ -4,11 +4,11 @@
       {%- for post in collections.posts | reverse -%}
         <div class="card mb-3">
           <div class="card-body">
-            <h5 class="card-title">
+            <h5 class="card-header mb-3">
               <a href="{{ post.url }}" class="text-dark">{{ post.data.title }}</a>
             </h5>
             <h6 class="card-subtitle mb-2 text-muted">{{ post.date | readableDate }}</h6>
-            <p class="card-text">{{ post.data.description }}</p>
+            <p class="card-body">{{ post.data.description }}</p>
             <a href="{{ post.url }}" class="card-link">Read More...</a>
             {% for tag in post.data.tags | filterTagList %}
               {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
@@ -18,5 +18,6 @@
         </div>
       {%- endfor -%}
     </ul>
+    
       </div>
       
