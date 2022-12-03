@@ -7,58 +7,21 @@ eleventyNavigation:
 
 {% set postslist = collections.posts | head(-3) %}
 
-{# <div class="bg-light">
-  <div class="container py-5">
-    <div class="row h-100 align-items-center py-5">
-      <div class="col-lg-6">
-        <h1 class="display-1 mb-5 text-center">Brody Mileham</h1>
-        <p class="lead text-muted">I am a highly self motivated and career driven individual, looking for a career change and striving for an opportunity into the IT Industry. I am naturally a great problem solver, creative thinker and fast learner. I am determined to develop my skills and understanding further into front and back end technologies and all aspects of the industry.</p>
-        </p>
-      </div>
-      <div class="col-lg-6 d-none d-lg-block"><img src="https://cdn.pixabay.com/photo/2017/01/29/13/20/laptop-2017978_1280.png" alt="" class="img-fluid"></div>
-    </div>
-  </div>
-</div>
-<div class="container text-center mt-3">
-    <button type="button" class="btn btn-outline-secondary">
-      <a href="{{ postslist[0].url | safe }}">
-        Latest Post
-        </a>
-      </button>
-  </div> #}
 
-  <div class="py-md-32 position-relative vh-100">
-    <div class="container-lg max-w-screen-xl">
-      <div class="row align-items-center">
-        <div class="col-lg-6 order-lg-1 ms-auto d-none d-lg-block">
-          <div class="mb-5 mb-lg-0 w-11/10 position-relative">
-            <!-- Illustration -->
-            <div class="svg-fluid position-relative overlap-10">
-              {% include "img/hero.svg" %}
-            </div>
-            <!-- Decorations -->
-            <div class="position-absolute bottom-0 start-72 h-64 w-64 mt-n4 transform translate-y-n1/2 translate-x-n1/2 gradient-bottom-right start-purple-400 end-cyan-500 filter blur-100 rounded-4 p-5"> </div>
-          </div>
-        </div>
-        <div class="col-lg-6 text-md-start text-center">
-          <!-- Subtitle -->
-          <h5 class="h5 text-muted mb-5">
-            A Blog By
-          </h5>
-          <!-- Heading -->
-          <h1 class="ls-tight font-bolder display-3 mb-5">
-            Brody Mileham
-          </h1>
-          <!-- Text -->
-          <p class="text-muted">I am a highly self motivated and career driven individual, looking for a career change and striving for an opportunity into the IT Industry. I am naturally a great problem solver, creative thinker and fast learner. I am determined to develop my skills and understanding further into front and back end technologies and all aspects of the industry. Here I will be showcasing my journey with The Coders Guild</p>
-          <!-- Buttons -->
-        <button type="button" class="btn btn-outline-secondary mt-5">
-        <a href="{{ postslist[0].url | safe }}">
-        Latest Post
-        </a>
-      </button>
+<section class="main py-5">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-6 py-5 mob">
+        <h3>
+          <small>Hello, I'm</small><br>
+        Brody Mileham
+        </h3>
+        <h6 class="text-muted">Front End Web Developer</h6>
+        <div class="buttons">
+          <button type="button" class="btn btn-outline-secondary mt-5"><a href="{{ postslist[0].url | safe }}">Latest Post</a></button>
+          <button type="button" class="btn btn-outline-secondary mt-5"><a href="files/bmileham_cv.docx">Download CV</a></button>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
