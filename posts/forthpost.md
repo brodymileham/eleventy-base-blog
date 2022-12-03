@@ -1,6 +1,6 @@
 ---
 title: Lesson 4
-description: This is a post about our forth lesson with the Coders Guild
+description: This is a post about our third lesson with the Coders Guild
 layout: layouts/post.njk
 tags:
   - lessons

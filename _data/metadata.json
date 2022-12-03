@@ -1,8 +1,8 @@
 {
   "title": "Brody Mileham",
-  "url": "https://example.com/",
+  "url": "https://www.brodymileham.com/",
   "language": "en",
-  "description": "I am writing about my experience of becoming a web developer",
+  "description": "My personal portfolio",
   "feed": {
     "subtitle": "I am writing about my experiences as a web developer",
     "filename": "feed.xml",
@@ -16,6 +16,6 @@
   "author": {
     "name": "Brody Mileham",
     "email": "brodymileham@hotmail.com",
-    "url": "https://example.com/about-me/"
+    "url": "https://www.brodymileham.com/contact/"
   }
 }
