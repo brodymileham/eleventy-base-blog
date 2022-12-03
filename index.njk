@@ -8,10 +8,10 @@ eleventyNavigation:
 {% set postslist = collections.posts | head(-3) %}
 
 
-<section class="main py-5">
-  <div class="container py-5">
+<section class="main mt-5">
+  <div class="container mt-5">
     <div class="row">
-      <div class="col-lg-6 py-5 mob">
+      <div class="col-lg-6 mt-5">
         <h3>
           <small>Hello, I'm</small><br>
         Brody Mileham
@@ -19,8 +19,11 @@ eleventyNavigation:
         <h6 class="text-muted">Front End Web Developer</h6>
         <div class="buttons">
           <button type="button" class="btn btn-outline-secondary mt-5"><a href="{{ postslist[0].url | safe }}">Latest Post</a></button>
-          <button type="button" class="btn btn-outline-secondary mt-5"><a href="files/bmileham_cv.docx">Download CV</a></button>
+          <button type="button" class="btn btn-outline-secondary mt-5 disabled"><a href="files/bmileham_cv.docx">Download CV</a></button>
         </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero"></div>
       </div>
     </div>
   </div>
