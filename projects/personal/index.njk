@@ -1,0 +1,14 @@
+---
+layout: layouts/projectpage.njk
+title: Personal Projects
+---
+<div class="container mt-5 text-center">
+  <h1 class="display-4 mb-5">Personal Projects</h1>
+</div>
+<div class="container text-center min-vh-100 mt-5">
+  <div class="row gap-2 justify-content-center">
+    {% set personalprojectslist = collections.personalprojects %}
+      {% include "personalprojectslist.njk" %}
+  
+  </div>
+</div>

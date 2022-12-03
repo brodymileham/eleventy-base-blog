@@ -1,0 +1,14 @@
+{%- for project in collections.personalprojects -%}
+<div class="col-md-6">
+      <div class="card">
+        <h5 class="card-header">{{project.data.title}}</h5>
+        <div class="card-body">
+          <p class="card-text">
+            {{project.data.description}}
+          </p>
+          <a href="{{project.data.link1}}" class="btn btn-dark text-light">View Project</a>
+          <a href="{{project.data.link2}}" class="btn btn-dark text-light">Github Link</a>
+        </div>
+      </div>
+    </div>
+    {%- endfor -%}
