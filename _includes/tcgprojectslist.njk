@@ -1,0 +1,14 @@
+    {%- for project in collections.tcgprojects -%}
+    <div class="col-md-6">
+      <div class="card m-1">
+        <h5 class="card-header">{{project.data.title}}</h5>
+        <div class="card-body">
+          <p class="card-text">
+            {{project.data.description}}
+          </p>
+          <a href="{{project.data.link1}}" target="_blank" class="btn btn-dark text-light">View Project</a>
+          <a href="{{project.data.link2}}" class="btn btn-dark text-light disabled">View Post</a>
+        </div>
+      </div>
+    </div>
+    {%- endfor -%}

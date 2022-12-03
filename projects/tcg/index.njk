@@ -1,0 +1,15 @@
+---
+layout: layouts/projectpage.njk
+title: TCG Projects
+---
+
+<div class="container mt-5 text-center">
+  <h1 class="display-4 mb-5">The Coders Guild</h1>
+</div>
+<div class="container text-center min-vh-100 mt-5">
+  <div class="row gap-2 justify-content-center">
+    {% set tcgprojectslist = collections.tcgprojects %}
+      {% include "tcgprojectslist.njk" %}
+  </div>
+</div>
+
