@@ -7,8 +7,8 @@ title: TCG Projects
   <h1 class="display-4 mb-5">The Coders Guild</h1>
 </div>
 <div class="container text-center min-vh-100 mt-5">
-  <div class="row">
-    <div class="col-md-6 justify-content-center">
+  <div class="row gap-2 justify-content-center">
+    <div class="col-md-6">
       <div class="card m-1">
         <h5 class="card-header">Frameworks</h5>
         <div class="card-body">
@@ -21,7 +21,7 @@ title: TCG Projects
         </div>
       </div>
     </div>
-    <div class="col-md-6 justify-content-center">
+    <div class="col-md-6">
       <div class="card m-1">
         <h5 class="card-header">Static Site Generators</h5>
         <div class="card-body">
@@ -32,7 +32,7 @@ title: TCG Projects
         </div>
       </div>
     </div>
-    <div class="col-md-6 justify-content-center">
+    <div class="col-md-6">
       <div class="card m-1">
         <h5 class="card-header">Tip Calculator</h5>
         <div class="card-body">

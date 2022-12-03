@@ -6,9 +6,9 @@ title: Personal Projects
   <h1 class="display-4 mb-5">Personal Projects</h1>
 </div>
 <div class="container text-center min-vh-100 mt-5">
-  <div class="row">
-    <div class="col-md-6 justify-content-center">
-      <div class="card m-1">
+  <div class="row gap-2 justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
         <h5 class="card-header">Benji Marritt Construction</h5>
         <div class="card-body">
           <p class="card-text">
@@ -18,8 +18,8 @@ title: Personal Projects
         </div>
       </div>
     </div>
-    <div class="col-md-6 justify-content-center">
-      <div class="card m-1">
+    <div class="col-md-6">
+      <div class="card">
         <h5 class="card-header">Marritt Plastering Services</h5>
         <div class="card-body">
           <p class="card-text">
