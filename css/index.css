@@ -58,11 +58,12 @@ footer {
 p:last-child {
   margin-bottom: 0;
 }
+/*
 p,
-.tmpl-post li,
+ .tmpl-post li,
 img {
-  /* max-width: 37.5em; 600px /16 */
-}
+   max-width: 37.5em; 600px /16 
+} */
 p,
 .tmpl-post li {
   line-height: 1.45;
@@ -127,7 +128,7 @@ a[href]:visited {
   }
   .buttons{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   }
 
