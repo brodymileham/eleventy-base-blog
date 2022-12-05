@@ -338,3 +338,7 @@ a[href].direct-link:focus:visited,
 .maxheight {
   height: 100vh;
 }
+
+.quotes {
+  margin-top: 4rem;
+}
