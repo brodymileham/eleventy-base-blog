@@ -6,29 +6,35 @@ eleventyNavigation:
 ---
 
 {% set postslist = collections.posts | head(-1) %}
-
-
-
-
 <section class="main mt-5">
   <div class="container mt-5">
     <div class="row">
       <div class="col-lg-6 mt-5">
         <h3>
-          <small>Hello, I'm</small><br>
-        Brody Mileham
-        </h3>
-        <h6 class="text-muted">Front End Web Developer</h6>
-        <div class="buttons">
-          <button type="button" class="btn btn-block btn-outline-secondary mt-5"><a href="{{ postslist[0].url | safe }}">Latest Post</a></button>
-          <button type="button" class="btn btn-block btn-outline-secondary mt-5"><a href="https://brodymileham.github.io/">Links Page</a></button>
+          <small>Hello, I'm</small>
+          <br>
+            Brody Mileham
+          </h3>
+          <h6 class="text-muted">Front End Web Developer</h6>
+          <div class="buttons">
+            <button type="button" class="btn btn-block btn-outline-secondary mt-5">
+              <a href="{{ postslist[0].url | safe }}">Latest Post</a>
+            </button>
+            <button type="button" class="btn btn-block btn-outline-secondary mt-5">
+              <a href="https://brodymileham.github.io/">Links Page</a>
+            </button>
+          </div>
+          {# <div class="jokes mt-5"></div> #}
+          {# <button id="jokebtn"
+            type="button"
+            class="btn btn-lg btn-danger jokebtn"
+            data-bs-toggle="popover"
+            title="Popover title"
+            data-bs-content="A joke">Click here for a joke!</button>
+        </div> #}
+        <div class="col-lg-6">
+          <div class="hero"></div>
         </div>
       </div>
-      <div class="col-lg-6">
-        <div class="hero"></div>
-      </div>
     </div>
-  </div>
-</section>
-
-
+  </section>
