@@ -65,8 +65,13 @@ img {
    max-width: 37.5em; 600px /16 
 } */
 p,
+
+.tmpl-post {
+  
+}
 .tmpl-post li {
   line-height: 1.45;
+  /* min-height: 90vh; */
 }
 
 a[href] {
